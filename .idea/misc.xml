@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/openai/pom.xml" />
         <option value="$PROJECT_DIR$/ollama/pom.xml" />
+        <option value="$PROJECT_DIR$/multimodel/pom.xml" />
       </list>
     </option>
   </component>
