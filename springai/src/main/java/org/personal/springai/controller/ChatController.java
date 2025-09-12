@@ -1,5 +1,6 @@
 package org.personal.springai.controller;
 
+import org.personal.springai.advisors.TokenUsageAuditAdvisor;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,7 @@ public class ChatController {
     public String chat(@RequestParam(required = false) String message) {
         return chatClient
                 .prompt()
+                //.advisors(new TokenUsageAuditAdvisor())
                 .user(message)
                 .call().content();
     }
