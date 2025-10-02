@@ -2,10 +2,9 @@ package org.personal.springai.controller;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import static org.springframework.ai.chat.memory.ChatMemory.CONVERSATION_ID;
 
 @RestController
 @RequestMapping("/api")
@@ -18,10 +17,13 @@ public class ChatMemoryChatController {
     }
 
     @GetMapping("/chat-memory")
-    public String chat(@RequestParam(required = false) String message) {
+    public String chat(@RequestHeader("username") String username, @RequestParam(required = false) String message) {
         return chatClient
                 .prompt()
                 .user(message)
+                .advisors(
+                        advisorSpec -> advisorSpec.param(CONVERSATION_ID, username)
+                )
                 .call().content();
     }
 
