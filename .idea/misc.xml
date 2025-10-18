@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/ollama/pom.xml" />
         <option value="$PROJECT_DIR$/multimodel/pom.xml" />
         <option value="$PROJECT_DIR$/springai/pom.xml" />
+        <option value="$PROJECT_DIR$/mcpclient/pom.xml" />
       </list>
     </option>
   </component>
