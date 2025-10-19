@@ -7,6 +7,20 @@
         "@modelcontextprotocol/server-filesystem",
         "/Users/arjunanravi/Documents/Study/MCP"
       ]
+    },
+    "github": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
     }
   }
 }
