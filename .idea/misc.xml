@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/springai/pom.xml" />
         <option value="$PROJECT_DIR$/mcpclient/pom.xml" />
         <option value="$PROJECT_DIR$/mcpserverstdio/pom.xml" />
+        <option value="$PROJECT_DIR$/mcpserverremote/pom.xml" />
       </list>
     </option>
   </component>

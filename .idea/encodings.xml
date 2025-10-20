@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/mcpclient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mcpserverremote/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mcpserverstdio/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/multimodel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ollama/src/main/java" charset="UTF-8" />
