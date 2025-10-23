@@ -13,7 +13,7 @@
         <module name="mcpclient" />
         <module name="multimodel" />
       </profile>
-      <profile name="Annotation profile for mcpserverremote" enabled="true">
+      <profile name="Annotation profile for mcpserverstdio" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
